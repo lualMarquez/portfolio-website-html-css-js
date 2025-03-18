@@ -1,0 +1,23 @@
+# Node.js dependencies
+node_modules/
+
+# macOS system files
+.DS_Store
+
+# VS Code settings folder
+.vscode/
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+
+# Build directories (if any)
+dist/
+build/
+
+# Operating system files (e.g., Windows or macOS)
+Thumbs.db
+ehthumbs.db
