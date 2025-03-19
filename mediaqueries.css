@@ -15,7 +15,10 @@
         display: none;
     }
     #hamburger-nav{
-        display: flex;
+        display: flex !important;
+        justify-content: space-between; /* This ensures logo and menu are spaced properly */
+        align-items: center;
+        padding: 0 5%;
     }
     #experience, .experience-details-container{
         margin-top: 2rem;
@@ -92,3 +95,4 @@
         text-align: justify;
     }
 }
+
