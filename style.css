@@ -269,6 +269,14 @@ cursor: default;
    #about {
     position: relative;
    }
+   .about-text {
+    margin-bottom: 20px; /* Adds space between paragraphs */
+    line-height: 1.6;    /* Adjusts line height for readability */
+}
+
+   .text-container {
+    padding: 20px;
+}
 
    .about-containers{
     gap: 2rem;
@@ -286,8 +294,13 @@ cursor: default;
    }
 
    .about-pic{
-    border-radius: 2rem;
-   }
+    width: 100%; /* Makes the image fill the container */
+    height: auto; /* Keeps the aspect ratio intact */
+    object-fit: cover; /* Ensures the image fills the container without distortion */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    min-width: 250px; /* Limits the maximum width to avoid over-expanding */
+    max-height: 400px;
+}
 
    .arrow{
     position: absolute;
@@ -305,14 +318,22 @@ cursor: default;
     text-align: center;
    }
 
-   .section-container {
-    gap: 4rem;
-    height: 80%;
-   }
+    .section-container {
+        display: flex;
+    justify-content: space-between; /* Changed from 'none' to properly distribute space */
+    align-items: center; /* Center items vertically */
+    gap: 2rem;
+    width: 100%; /* Ensure it uses full width */
+    }
+   
 
    .section__pic-container{
-    height: 400px;
-    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%; /* Give it a percentage width instead of fixed pixels */
+    max-width: 400px; /* Maximum width */
+    height: auto; /* Auto height based on content */
     margin: auto 0;
    }
 
